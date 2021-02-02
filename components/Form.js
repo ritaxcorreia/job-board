@@ -14,7 +14,7 @@ export default function Form() {
 				</p>
 
 				<p>
-					<label for="jobs">Job type</label>
+					<label for="jobs">What are you looking for?</label>
 					<button type="submit">Full-stack</button>
 					<button type="submit">Front-end</button>
 					<button type="submit">Back-end</button>

@@ -1,8 +1,19 @@
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
 .title {
 	font-family: "Montserrat", sans-serif;
 	font-size: 6rem;
+	margin-right: auto;
 }
 
 .bright {
-	border-bottom: 10px solid saddlebrown;
+	border-bottom: 10px solid black;
+}
+
+.bg {
+	width: 100vw;
+	z-index: -1;
 }
