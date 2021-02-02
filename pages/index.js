@@ -1,5 +1,8 @@
+import styles from "./index.module.css";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Hero from "../components/Hero.js";
+import Form from "../components/Form.js";
+import ExploreCities from "../components/ExploreCities.js";
 
 export default function Home() {
 	return (
@@ -10,13 +13,10 @@ export default function Home() {
 			</Head>
 
 			<main className={styles.main}>
-				<h1 className={styles.title}>
-					Welcome to <span className={styles.bright}>Bright.</span>
-				</h1>
+				<Hero />
+				<Form />
 
-				<p className={styles.description}>Your curated dev job board</p>
-
-				<div className={styles.grid}></div>
+				<ExploreCities />
 			</main>
 
 			<footer className={styles.footer}>
