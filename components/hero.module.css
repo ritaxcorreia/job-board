@@ -1,19 +1,45 @@
 .container {
 	display: flex;
 	flex-direction: column;
+	margin-left: 40px;
+	margin-right: 40px;
+	position: relative;
 }
 
 .title {
 	font-family: "Montserrat", sans-serif;
 	font-size: 6rem;
-	margin-right: auto;
 }
 
 .bright {
-	border-bottom: 10px solid black;
+	border-bottom: 14px solid black;
 }
 
 .bg {
-	width: 100vw;
+	position: absolute;
+	background-image: url("/assets/triangle1.svg");
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 20%;
+	left: 0;
 	z-index: -1;
+	width: 100vw;
+	height: 300px;
+}
+
+.description {
+	font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 700px) {
+	.container {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.title {
+		font-family: "Montserrat", sans-serif;
+		font-size: 5rem;
+	}
 }
