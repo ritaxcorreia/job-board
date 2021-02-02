@@ -12,7 +12,7 @@ export default function Home() {
 	// };
 
 	return (
-		<div className={styles.container}>
+		<div class={styles.container}>
 			<Head>
 				<title>Bright.</title>
 				<link rel="icon" href="/favicon.ico" />
@@ -75,7 +75,7 @@ export default function Home() {
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
 
-			<main className={styles.main}>
+			<main class={styles.main}>
 				<Hero />
 				<Form />
 
