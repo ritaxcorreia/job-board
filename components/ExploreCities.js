@@ -3,13 +3,13 @@ import styles from "./exploreCities.module.css";
 export default function ExploreCities(props) {
 	return (
 		<>
-			<label for="cities" class={styles.title}>
+			<label for="cities" className={styles.title}>
 				Explore cities
 			</label>
-			<div class={styles.grid}>
-				<button type="submit" class={styles.cityButton}>
+			<div className={styles.grid}>
+				<button type="submit" className={styles.cityButton}>
 					<img
-						class={styles.london}
+						className={styles.london}
 						src="/assets/cities/london.svg"
 						aria-label="hidden"
 						alt=" "
@@ -17,9 +17,9 @@ export default function ExploreCities(props) {
 					London
 				</button>
 
-				<button type="submit" class={styles.cityButton}>
+				<button type="submit" className={styles.cityButton}>
 					<img
-						class={styles.sanfran}
+						className={styles.sanfran}
 						src="/assets/cities/sanfran.svg"
 						aria-label="hidden"
 						alt=" "
@@ -27,9 +27,9 @@ export default function ExploreCities(props) {
 					San Francisco
 				</button>
 
-				<button type="submit" class={styles.cityButton}>
+				<button type="submit" className={styles.cityButton}>
 					<img
-						class={styles.sydney}
+						className={styles.sydney}
 						src="/assets/cities/sydney.svg"
 						aria-label="hidden"
 						alt=" "
@@ -37,9 +37,9 @@ export default function ExploreCities(props) {
 					Sydney
 				</button>
 
-				<button type="submit" class={styles.cityButton}>
+				<button type="submit" className={styles.cityButton}>
 					<img
-						class={styles.nyc}
+						className={styles.nyc}
 						src="/assets/cities/nyc.svg"
 						aria-label="hidden"
 						alt=" "
@@ -47,9 +47,9 @@ export default function ExploreCities(props) {
 					New York City
 				</button>
 
-				<button type="submit" class={styles.cityButton}>
+				<button type="submit" className={styles.cityButton}>
 					<img
-						class={styles.paris}
+						className={styles.paris}
 						src="/assets/cities/paris.svg"
 						aria-label="hidden"
 						alt=" "
@@ -57,9 +57,9 @@ export default function ExploreCities(props) {
 					Paris
 				</button>
 
-				<button type="submit" class={styles.cityButton}>
+				<button type="submit" className={styles.cityButton}>
 					<img
-						class={styles.toronto}
+						className={styles.toronto}
 						src="/assets/cities/toronto.svg"
 						aria-label="hidden"
 						alt=" "

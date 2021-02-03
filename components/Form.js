@@ -3,30 +3,56 @@ import styles from "./form.module.css";
 export default function Form() {
 	return (
 		<>
-			<div class={styles.container}>
+			<div className={styles.container}>
 				<form name="contact" method="POST" data-netlify="false">
-					<p>
-						<label for="name">What's your name? </label>
-						<input type="text" id="name" name="name" />
-					</p>
-					<p>
-						<label for="location">Preferred location? </label>
-						<input type="text" id="location" name="location" />
-					</p>
+					<div>
+						<label for="name" className={styles.title}>
+							What's your name?{" "}
+						</label>
 
-					<p>
-						<label for="jobs">What are you looking for?</label>
+						<input
+							type="text"
+							id="name"
+							name="name"
+							data-validate="Name is required"
+							placeholder="Type your name"
+						/>
+					</div>
+
+					<div>
+						<label for="location" className={styles.title}>
+							Preferred location?{" "}
+						</label>
+
+						<input
+							type="text"
+							id="location"
+							name="location"
+							data-validate="Location is required"
+							placeholder="City"
+						/>
+					</div>
+
+					<div>
+						<label for="jobs" className={styles.title}>
+							What are you looking for?
+						</label>
 						<button type="submit">Full-stack</button>
 						<button type="submit">Front-end</button>
 						<button type="submit">Back-end</button>
 						<button type="submit">DevOps</button>
-					</p>
+					</div>
 
-					<p>
-						<button type="submit">Send</button>
-					</p>
+					<button type="submit">Send</button>
 				</form>
 			</div>
 		</>
 	);
+}
+
+{
+	/* <div className="wrap-input2 validate-input" data-validate="Name is required">
+						<input className="input2" type="text" name="name">
+						<span className="focus-input2" data-placeholder="NAME"></span>
+					</div> */
 }

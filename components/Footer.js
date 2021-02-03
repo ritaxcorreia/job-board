@@ -5,9 +5,9 @@ export default function Footer() {
 
 	return (
 		<>
-			<footer class={styles.footer}>
+			<footer className={styles.footer}>
 				<div>
-					<a class={styles.bright} href="/">
+					<a className={styles.bright} href="/">
 						Bright.{" "}
 					</a>
 				</div>

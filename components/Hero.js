@@ -3,14 +3,16 @@ import styles from "./hero.module.css";
 export default function Hero() {
 	return (
 		<>
-			<div class={styles.bg} aria-hidden="true"></div>
-			<div class={styles.container}>
-				<h1 class={styles.title}>
+			<div className={styles.bg} aria-hidden="true"></div>
+			<div className={styles.container}>
+				<h1 className={styles.title}>
 					Welcome to <br />
-					<span class={styles.bright}>Bright.</span>
+					<span className={styles.bright}>Bright.</span>
 				</h1>
 
-				<p class={styles.description}>Your curated dev job board.</p>
+				<p className={styles.description}>
+					Your curated dev job board.
+				</p>
 			</div>
 		</>
 	);
