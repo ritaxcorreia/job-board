@@ -1,18 +1,20 @@
 import styles from "./footer.module.css";
 
 export default function Footer() {
+	const year = new Date().getFullYear();
+
 	return (
 		<>
-			<footer className={styles.footer}>
+			<footer class={styles.footer}>
 				<div>
-					<a className="" href="/">
+					<a class={styles.bright} href="/">
 						Bright.{" "}
 					</a>
 				</div>
 				<p>
 					Designed and built by{" "}
 					<a href="https://www.ritacorreia.co/" target="_blank">
-						Rita Correia.
+						Rita Correia © {year}.
 					</a>
 				</p>
 			</footer>

@@ -1,19 +1,71 @@
 import styles from "./exploreCities.module.css";
 
-export default function ExploreCities() {
+export default function ExploreCities(props) {
 	return (
 		<>
-			<h2>Explore cities</h2>
-			<div className={styles.grid}>
-				<p>
-					<label for="cities">Explore cities</label>
-					<button type="submit">London</button>
-					<button type="submit">San Francisco</button>
-					<button type="submit">Madrid</button>
-					<button type="submit">New York City</button>
-					<button type="submit">Lisbon</button>
-					<button type="submit">Toronto</button>
-				</p>
+			<label for="cities" class={styles.title}>
+				Explore cities
+			</label>
+			<div class={styles.grid}>
+				<button type="submit" class={styles.cityButton}>
+					<img
+						class={styles.london}
+						src="/assets/cities/london.svg"
+						aria-label="hidden"
+						alt=" "
+					></img>
+					London
+				</button>
+
+				<button type="submit" class={styles.cityButton}>
+					<img
+						class={styles.sanfran}
+						src="/assets/cities/sanfran.svg"
+						aria-label="hidden"
+						alt=" "
+					></img>
+					San Francisco
+				</button>
+
+				<button type="submit" class={styles.cityButton}>
+					<img
+						class={styles.sydney}
+						src="/assets/cities/sydney.svg"
+						aria-label="hidden"
+						alt=" "
+					></img>
+					Sydney
+				</button>
+
+				<button type="submit" class={styles.cityButton}>
+					<img
+						class={styles.nyc}
+						src="/assets/cities/nyc.svg"
+						aria-label="hidden"
+						alt=" "
+					></img>
+					New York City
+				</button>
+
+				<button type="submit" class={styles.cityButton}>
+					<img
+						class={styles.paris}
+						src="/assets/cities/paris.svg"
+						aria-label="hidden"
+						alt=" "
+					></img>
+					Paris
+				</button>
+
+				<button type="submit" class={styles.cityButton}>
+					<img
+						class={styles.toronto}
+						src="/assets/cities/toronto.svg"
+						aria-label="hidden"
+						alt=" "
+					></img>
+					Toronto
+				</button>
 			</div>
 		</>
 	);

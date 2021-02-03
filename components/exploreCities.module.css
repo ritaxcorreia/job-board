@@ -1,0 +1,111 @@
+.title {
+	font-weight: 600;
+	font-size: 1.5rem;
+	margin-top: 40px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 10px 10px;
+	margin: 40px;
+}
+
+.cityButton {
+	border: none;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 1.1rem;
+	background-color: black;
+	color: white;
+	height: 180px;
+	width: 180px;
+	padding: auto auto;
+	margin: 20px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	transition: background 250ms ease-in-out, transform 150ms ease;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.cityButton .london {
+	display: block;
+	width: 44px;
+	margin: 5px auto;
+}
+
+.cityButton .sanfran {
+	display: block;
+	width: 46px;
+	margin: 5px auto;
+}
+
+.cityButton .sydney {
+	display: block;
+	width: 46px;
+	margin: 5px auto;
+}
+
+.cityButton .nyc {
+	display: block;
+	width: 46px;
+	margin: 5px auto;
+}
+
+.cityButton .paris {
+	display: block;
+	width: 44px;
+	margin: 5px auto;
+}
+
+.cityButton .toronto {
+	display: block;
+	width: 46px;
+	margin: 5px auto;
+}
+
+.cityButton:hover,
+.cityButton:focus {
+	background: rgb(0, 35, 152) 52%;
+}
+
+.cityButton:focus {
+	outline: 1px solid #fff;
+	outline-offset: -4px;
+}
+
+.cityButton:active {
+	transform: scale(0.99);
+}
+
+@media only screen and (max-width: 690px) {
+	.grid {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.cityButton {
+		height: 160px;
+		width: 160px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		margin-bottom: 0;
+	}
+
+	.cityButton {
+		height: 200px;
+		width: 200px;
+	}
+}

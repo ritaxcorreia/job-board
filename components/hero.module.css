@@ -25,11 +25,14 @@
 	left: 0;
 	z-index: -1;
 	width: 100vw;
-	height: 300px;
+	height: 320px;
 }
 
 .description {
+	font-family: "Merriweather", serif;
 	font-size: 1.4rem;
+	margin-top: 0;
+	margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -39,7 +42,69 @@
 	}
 
 	.title {
-		font-family: "Montserrat", sans-serif;
-		font-size: 5rem;
+		font-size: 5.5rem;
+	}
+
+	.bg {
+		top: 20%;
+
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 595px) {
+	.container {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.title {
+		font-size: 4.5rem;
+	}
+
+	.description {
+		font-size: 1.3rem;
+	}
+
+	.bg {
+		height: 250px;
+	}
+}
+
+@media only screen and (max-width: 490px) {
+	.container {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.title {
+		font-size: 3.5rem;
+	}
+
+	.description {
+		font-size: 1.1rem;
+	}
+
+	.bg {
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	.container {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.title {
+		font-size: 3rem;
+	}
+
+	.description {
+		font-size: 1rem;
+	}
+
+	.bg {
+		height: 140px;
 	}
 }

@@ -1,0 +1,15 @@
+.container {
+	display: flex;
+	margin-top: 100px;
+}
+
+/* position: absolute;
+background-image: url("/assets/triangle1.svg");
+background-position: bottom right;
+background-repeat: no-repeat;
+background-size: cover;
+top: 20%;
+left: 0;
+z-index: -1;
+width: 100vw;
+height: 300px; */
