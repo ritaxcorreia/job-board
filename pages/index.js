@@ -77,7 +77,7 @@ export default function Home() {
 
 			<main className={styles.main}>
 				<Hero />
-				<Form />
+				{/* <Form /> */}
 
 				<ExploreCities />
 			</main>
