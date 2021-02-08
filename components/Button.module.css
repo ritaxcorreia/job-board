@@ -1,0 +1,34 @@
+.button {
+	border: none;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 0.8rem;
+	background-color: black;
+	color: white;
+	height: 24px;
+	width: 100px;
+	padding: auto auto;
+	margin: 5px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	transition: background 250ms ease-in-out, transform 150ms ease;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.button:hover,
+.button:focus {
+	background: rgb(0, 35, 152) 52%;
+}
+
+.button:focus {
+	outline: 1px solid #fff;
+	outline-offset: -4px;
+}
+
+.button:active {
+	transform: scale(0.99);
+}

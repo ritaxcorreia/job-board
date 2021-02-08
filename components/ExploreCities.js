@@ -1,9 +1,9 @@
-import styles from "./exploreCities.module.css";
+import styles from "./ExploreCities.module.css";
 
 export default function ExploreCities(props) {
 	return (
 		<>
-			<label for="cities" className={styles.title}>
+			<label htmlFor="cities" className={styles.title}>
 				Explore cities
 			</label>
 			<div className={styles.grid}>

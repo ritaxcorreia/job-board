@@ -1,19 +1,35 @@
 .container {
 	display: flex;
-	margin-top: 100px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	border: solid 5px black;
+	padding: 50px;
+	max-width: 700px;
 }
-
-/* position: absolute;
-background-image: url("/assets/triangle1.svg");
-background-position: bottom right;
-background-repeat: no-repeat;
-background-size: cover;
-top: 20%;
-left: 0;
-z-index: -1;
-width: 100vw;
-height: 300px; */
 
 .title {
 	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.searchButton {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.textInput {
+	height: 30px;
+	border: 2px solid black;
+	outline: none;
+	padding-left: 12px;
+	font-family: "Montserrat", sans-serif;
+	margin-left: 10px;
+}
+
+.textInput:focus {
+	background-color: rgb(218, 218, 218);
+}
+
+.question {
+	padding-bottom: 20px;
 }

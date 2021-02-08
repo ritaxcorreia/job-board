@@ -1,16 +1,18 @@
-import styles from "./form.module.css";
+import styles from "./Form.module.css";
+import Button from "./Button";
 
-export default function Form() {
+export default function Form(props) {
 	return (
 		<>
 			<div className={styles.container}>
 				<form name="contact" method="POST" data-netlify="false">
-					<div>
-						<label for="name" className={styles.title}>
+					<div className={styles.question}>
+						<label htmlFor="name" className={styles.title}>
 							What's your name?{" "}
 						</label>
 
 						<input
+							className={styles.textInput}
 							type="text"
 							id="name"
 							name="name"
@@ -19,12 +21,13 @@ export default function Form() {
 						/>
 					</div>
 
-					<div>
-						<label for="location" className={styles.title}>
+					<div className={styles.question}>
+						<label htmlFor="location" className={styles.title}>
 							Preferred location?{" "}
 						</label>
 
 						<input
+							className={styles.textInput}
 							type="text"
 							id="location"
 							name="location"
@@ -33,26 +36,21 @@ export default function Form() {
 						/>
 					</div>
 
-					<div>
-						<label for="jobs" className={styles.title}>
-							What are you looking for?
+					<div className={styles.question}>
+						<label htmlFor="jobs" className={styles.title}>
+							What roles are you looking for?
 						</label>
-						<button type="submit">Full-stack</button>
-						<button type="submit">Front-end</button>
-						<button type="submit">Back-end</button>
-						<button type="submit">DevOps</button>
+						<Button>Full-stack</Button>
+						<Button>Front-end</Button>
+						<Button>Back-end</Button>
+						<Button>DevOps</Button>
 					</div>
 
-					<button type="submit">Send</button>
+					<div className={styles.searchButton}>
+						<Button type="submit">Search</Button>
+					</div>
 				</form>
 			</div>
 		</>
 	);
-}
-
-{
-	/* <div className="wrap-input2 validate-input" data-validate="Name is required">
-						<input className="input2" type="text" name="name">
-						<span className="focus-input2" data-placeholder="NAME"></span>
-					</div> */
 }
