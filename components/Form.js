@@ -40,10 +40,14 @@ export default function Form(props) {
 						<label htmlFor="jobs" className={styles.title}>
 							What roles are you looking for?
 						</label>
-						<Button>Full-stack</Button>
-						<Button>Front-end</Button>
-						<Button>Back-end</Button>
-						<Button>DevOps</Button>
+						<div className={styles.buttonContainer}>
+							<Button className={styles.button}>
+								Full-stack
+							</Button>
+							<Button className={styles.button}>Front-end</Button>
+							<Button className={styles.button}>Back-end</Button>
+							<Button className={styles.button}>DevOps</Button>
+						</div>
 					</div>
 
 					<div className={styles.searchButton}>

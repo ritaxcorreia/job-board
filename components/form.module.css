@@ -33,3 +33,16 @@
 .question {
 	padding-bottom: 20px;
 }
+
+.buttonContainer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 12px;
+}
+
+.button {
+	flex-basis: 1;
+}
