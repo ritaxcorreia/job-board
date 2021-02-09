@@ -2,7 +2,7 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
 	return (
-		<>
+		<header>
 			<div className={styles.bg} aria-hidden="true"></div>
 			<div className={styles.container}>
 				<h1 className={styles.title}>
@@ -14,6 +14,6 @@ export default function Hero() {
 					Your curated dev job board.
 				</p>
 			</div>
-		</>
+		</header>
 	);
 }

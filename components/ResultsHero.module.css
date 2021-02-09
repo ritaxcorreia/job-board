@@ -1,0 +1,30 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: flex-start;
+	margin: 0 20px 20px 20px;
+}
+
+.bg {
+	position: absolute;
+	background-image: url("/assets/triangle1.svg");
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 0%;
+	left: 0;
+	z-index: -1;
+	width: 100vw;
+	height: 80px;
+}
+
+.title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 2.3rem;
+	margin-bottom: 5px;
+}
+
+.bright {
+	border-bottom: 6px solid black;
+}
