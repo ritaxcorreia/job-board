@@ -6,11 +6,6 @@ import ExploreCities from "../components/ExploreCities.js";
 import Footer from "../components/Footer.js";
 
 export default function Home() {
-	// const handleSubmit = (event) => {
-	// 	event.preventDefault();
-	// 	console.log("You have submitted the form.");
-	// };
-
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -40,7 +35,7 @@ export default function Home() {
 				<meta
 					id="meta"
 					name="viewport"
-					content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"
+					content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0"
 				/>
 				<meta name="Bright." content="Your curated dev job board." />
 
@@ -73,6 +68,7 @@ export default function Home() {
 
 				<ExploreCities />
 			</main>
+
 			<Footer />
 		</div>
 	);
