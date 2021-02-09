@@ -1,0 +1,9 @@
+.container {
+	display: flex;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.intro {
+	font-size: 1.3rem;
+}

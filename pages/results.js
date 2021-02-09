@@ -1,7 +1,8 @@
 import styles from "./Results.module.css";
 import Head from "next/head";
-import ResultsHero from "../components/ResultsHero.js";
+import ResultsHeader from "../components/Header.js";
 import Footer from "../components/Footer.js";
+import DisplayResults from "../components/DisplayResults";
 
 export default function Results() {
 	return (
@@ -54,9 +55,11 @@ export default function Results() {
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
 
-			<ResultsHero />
+			<ResultsHeader />
 
-			<main className={styles.main}></main>
+			<main className={styles.main}>
+				<DisplayResults />
+			</main>
 
 			<Footer />
 		</div>

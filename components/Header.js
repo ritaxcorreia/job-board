@@ -1,6 +1,6 @@
-import styles from "./ResultsHero.module.css";
+import styles from "./Header.module.css";
 
-export default function ResultsHero() {
+export default function Header() {
 	return (
 		<header>
 			<div className={styles.bg} aria-hidden="true"></div>
