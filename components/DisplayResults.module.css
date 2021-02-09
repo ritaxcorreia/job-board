@@ -1,9 +1,14 @@
 .container {
 	display: flex;
+	flex-direction: column;
 	width: 1000px;
 	margin: 0 auto;
 }
 
 .intro {
 	font-size: 1.3rem;
+}
+
+.jobResults {
+	align-items: center;
 }
